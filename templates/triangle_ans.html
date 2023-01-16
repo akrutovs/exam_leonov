@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <form method=POST>
+        <label>Количество строк </label>
+        <input type=text    name=count value={{obj.countLines}}>
+        <input type=submit formaction = '/triangle_ans' value="Получить треугольник Паскаля">
+    </form>
+
+    <div align="center">
+        {% for it in obj.lines %}
+            {{it}}
+            <br>
+        {% endfor %}
+    </div>
+
+{% endblock %}

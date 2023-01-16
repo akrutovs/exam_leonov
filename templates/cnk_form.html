@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="col-md-7 col-lg-8">
+         <form class="needs-validation" novalidate="" action='/add_cnk' method=POST>
+            <div class="col-sm-6">
+                <label for="N" class="form-label">Напишите N сюда</label>
+                <input type="text" class="form-control" id="N" name=N placeholder="" value=N>
+            </div>
+             <div class="col-sm-6">
+                <label for="K" class="form-label">Напишите K сюда</label>
+                <input type="text" class="form-control" id="K" name=K placeholder="" value=K>
+            </div>
+            <button class="w-100 btn btn-primary btn-lg" type="submit" value="Ok">Add</button>
+         </form>
+    </div>
+
+</div>
+{% endblock %}

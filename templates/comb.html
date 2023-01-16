@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row align-items-start">
+        {% for it in items %}
+            <h4>{{ it }}</h4>>
+        <p></p>
+        {% else %}
+        Group is empty
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="col-md-7 col-lg-8">
+         <form class="needs-validation" novalidate="" action='/inverse_ans' method=POST>
+            <div class="col-sm-6">
+                <label for="N" class="form-label">Напишите путь к файлу</label>
+                <input type="text" class="form-control" id="filename" name=filename placeholder="" value=user/...>
+            </div>
+            <button class="w-100 btn btn-primary btn-lg" type="submit" value="Ok">Add</button>
+         </form>
+    </div>
+
+</div>
+
+{% endblock %}

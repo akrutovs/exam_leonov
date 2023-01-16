@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="col-md-7 col-lg-8">
+         <form class="needs-validation" novalidate="" action='/symbols_ans' method=POST>
+            <div class="col-sm-6">
+                <label for="N" class="form-label">Напишите текст</label>
+                <textarea class="form-control" id="text" name=text rows="5" wrap=virtual> </textarea>
+
+            </div>
+            <button class="w-100 btn btn-primary btn-lg" type="submit" value="Ok">Add</button>
+         </form>
+    </div>
+
+</div>
+
+{% endblock %}
